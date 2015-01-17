@@ -20,6 +20,11 @@
 			var fruits = ["Apple", "Orange", "Banana", "Strawberry"];
 			
 			d3.select("body").selectAll("p").data(fruits).text(function(d) { return d; }).enter().append("p").text(function(d) { return d; });
+
+			var svg = d3.select("body").append("svg").attr("width",700).attr("height",400);
+			
+			var circle = svg.append("circle").attr("cx",300).attr("cy",200).attr("r",180).attr("fill","#28cca3").attr("stroke","#2efac7").attr("stroke-width",10); // ˜g‚Ì‘¾‚³
+
 		}
 	})();
 
